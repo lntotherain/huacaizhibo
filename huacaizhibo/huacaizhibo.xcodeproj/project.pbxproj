@@ -20,6 +20,7 @@
 		0498FCB31DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498FCB21DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift */; };
 		04C769871DC5A70A00E0C765 /* YZPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C769861DC5A70A00E0C765 /* YZPageTitleView.swift */; };
 		04C769891DC5A9A200E0C765 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C769881DC5A9A200E0C765 /* Common.swift */; };
+		04C7698B1DC5F24F00E0C765 /* YZPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7698A1DC5F24F00E0C765 /* YZPageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0498FCB21DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
 		04C769861DC5A70A00E0C765 /* YZPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPageTitleView.swift; sourceTree = "<group>"; };
 		04C769881DC5A9A200E0C765 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		04C7698A1DC5F24F00E0C765 /* YZPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				04C769861DC5A70A00E0C765 /* YZPageTitleView.swift */,
+				04C7698A1DC5F24F00E0C765 /* YZPageContentView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				0498FCAF1DC4D1BF0048CBD9 /* YZHomeVC.swift in Sources */,
 				0498FCB31DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift in Sources */,
 				0498FCAD1DC4A1160048CBD9 /* YZMainTabbarVC.swift in Sources */,
+				04C7698B1DC5F24F00E0C765 /* YZPageContentView.swift in Sources */,
 				04C769871DC5A70A00E0C765 /* YZPageTitleView.swift in Sources */,
 				04C769891DC5A9A200E0C765 /* Common.swift in Sources */,
 				04283BB31DC1EB4A0064828E /* AppDelegate.swift in Sources */,

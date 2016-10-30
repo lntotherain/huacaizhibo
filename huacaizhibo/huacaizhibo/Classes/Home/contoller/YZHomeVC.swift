@@ -7,13 +7,16 @@
 //
 
 import UIKit
-
+/*
+ 1.封装pageTitleView
+ 2.封装collectionView
+ 3.处理pageTitleView和collectionView滚动交互逻辑
+ */
 private let kPageTitlesViewH : CGFloat = 40
 
 class YZHomeVC: UIViewController {
 
-     lazy var pageTitlesView : YZPageTitleView = {
-        
+    lazy var pageTitlesView : YZPageTitleView = {
         
         let pageFrame  =  CGRect(x: 0, y: kNavigationBarH+kStatusBarH, width: kscreenW, height: kPageTitlesViewH)
         let pageTitles  =  ["推荐","游戏","娱乐","趣玩"]
@@ -21,19 +24,30 @@ class YZHomeVC: UIViewController {
 //        pageTitlesView.backgroundColor = UIColor.purple
         return pageTitlesView
     }()
-    
+    lazy var pageContentView : YZPageContentView = {
+        
+        let contentH = kscreenH-kStatusBarH-kNavigationBarH-kPageTitlesViewH
+        let contentFrame  = CGRect(x: 0, y: kStatusBarH+kNavigationBarH+kPageTitlesViewH, width: kscreenW, height: contentH)
+        var childVCs = [UIViewController]()
+        for _ in 0...3{
+            let vc = UIViewController()
+//           vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)/255), green: CGFloat(arc4random_uniform(255)/255), blue: CGFloat(arc4random_uniform(255)/255), alpha: 1)
+            vc.view.backgroundColor = UIColor.green
+            childVCs.append(vc)
+        }
+        
+        
+        let pageContentView = YZPageContentView(frame: contentFrame, childVCs: childVCs, parentVC: self)
+        return pageContentView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
       setUpUI()
         
-        
     }
-    
-    
-    
-    
+
 
 }
 
@@ -50,6 +64,10 @@ extension YZHomeVC {
         setUpNavigationItem()
         
         view.addSubview(pageTitlesView)
+        
+        view.addSubview(pageContentView)
+//        pageContentView.backgroundColor = UIColor.blue
+        
     }
     
     func setUpNavigationItem(){
@@ -62,7 +80,7 @@ extension YZHomeVC {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
        
         
-        //设置右侧items
+        // MARK: 设置右侧items
         let historyItem = setUpRightItems(name: "image_my_history")
         let searchItem = setUpRightItems(name: "Image_scan")
         let qrItem = setUpRightItems(name: "btn_search")
@@ -82,15 +100,10 @@ extension YZHomeVC {
         btn.setImage(imgHighLight, for: .highlighted)
         
         let barButtonItem = UIBarButtonItem(customView: btn)
-        
 
         return barButtonItem
     }
     
 }
 
-/*
- 1.封装pageTitleView
- 2.封装collectionView
- 3.处理pageTitleView和collectionView滚动交互逻辑
- */
+
