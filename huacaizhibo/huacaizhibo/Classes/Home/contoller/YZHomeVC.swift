@@ -8,8 +8,21 @@
 
 import UIKit
 
+private let kPageTitlesViewH : CGFloat = 40
+
 class YZHomeVC: UIViewController {
 
+     lazy var pageTitlesView : YZPageTitleView = {
+        
+        
+        let pageFrame  =  CGRect(x: 0, y: kNavigationBarH+kStatusBarH, width: kscreenW, height: kPageTitlesViewH)
+        let pageTitles  =  ["推荐","游戏","娱乐","趣玩"]
+        let pageTitlesView = YZPageTitleView(frame: pageFrame, titles: pageTitles)
+//        pageTitlesView.backgroundColor = UIColor.purple
+        return pageTitlesView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +44,12 @@ extension YZHomeVC {
    
     /// 设置UI相关
     func setUpUI() -> () {
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
         setUpNavigationItem()
+        
+        view.addSubview(pageTitlesView)
     }
     
     func setUpNavigationItem(){
@@ -70,3 +88,9 @@ extension YZHomeVC {
     }
     
 }
+
+/*
+ 1.封装pageTitleView
+ 2.封装collectionView
+ 3.处理pageTitleView和collectionView滚动交互逻辑
+ */
