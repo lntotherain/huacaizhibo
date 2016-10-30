@@ -11,6 +11,13 @@
 		04283BB81DC1EB4A0064828E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04283BB61DC1EB4A0064828E /* Main.storyboard */; };
 		04283BBA1DC1EB4A0064828E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04283BB91DC1EB4A0064828E /* Assets.xcassets */; };
 		04283BBD1DC1EB4A0064828E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04283BBB1DC1EB4A0064828E /* LaunchScreen.storyboard */; };
+		0498FC9C1DC49F230048CBD9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498FC9A1DC49F230048CBD9 /* Home.storyboard */; };
+		0498FCA21DC49FE70048CBD9 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498FCA01DC49FE70048CBD9 /* Follow.storyboard */; };
+		0498FCA61DC49FF60048CBD9 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498FCA41DC49FF60048CBD9 /* Live.storyboard */; };
+		0498FCAA1DC4A0030048CBD9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498FCA81DC4A0030048CBD9 /* Profile.storyboard */; };
+		0498FCAD1DC4A1160048CBD9 /* YZMainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498FCAC1DC4A1160048CBD9 /* YZMainTabbarVC.swift */; };
+		0498FCAF1DC4D1BF0048CBD9 /* YZHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498FCAE1DC4D1BF0048CBD9 /* YZHomeVC.swift */; };
+		0498FCB31DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498FCB21DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		04283BB91DC1EB4A0064828E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04283BBC1DC1EB4A0064828E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04283BBE1DC1EB4A0064828E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0498FC9A1DC49F230048CBD9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0498FCA01DC49FE70048CBD9 /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		0498FCA41DC49FF60048CBD9 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		0498FCA81DC4A0030048CBD9 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0498FCAC1DC4A1160048CBD9 /* YZMainTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YZMainTabbarVC.swift; path = ../YZMainTabbarVC.swift; sourceTree = "<group>"; };
+		0498FCAE1DC4D1BF0048CBD9 /* YZHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZHomeVC.swift; sourceTree = "<group>"; };
+		0498FCB21DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		04A27D5B1DC48FE90086C19D /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCA01DC49FE70048CBD9 /* Follow.storyboard */,
 				04A27D5C1DC48FE90086C19D /* contoller */,
 				04A27D5D1DC48FE90086C19D /* model */,
 				04A27D5E1DC48FE90086C19D /* view */,
@@ -108,6 +123,7 @@
 		04A27D5F1DC48FE90086C19D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0498FC9A1DC49F230048CBD9 /* Home.storyboard */,
 				04A27D601DC48FE90086C19D /* contoller */,
 				04A27D611DC48FE90086C19D /* model */,
 				04A27D621DC48FE90086C19D /* view */,
@@ -118,6 +134,7 @@
 		04A27D601DC48FE90086C19D /* contoller */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCAE1DC4D1BF0048CBD9 /* YZHomeVC.swift */,
 			);
 			path = contoller;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 		04A27D631DC48FE90086C19D /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCA41DC49FF60048CBD9 /* Live.storyboard */,
 				04A27D641DC48FE90086C19D /* contoller */,
 				04A27D651DC48FE90086C19D /* model */,
 				04A27D661DC48FE90086C19D /* view */,
@@ -181,6 +199,7 @@
 		04A27D681DC48FE90086C19D /* contoller */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCAC1DC4A1160048CBD9 /* YZMainTabbarVC.swift */,
 			);
 			path = contoller;
 			sourceTree = "<group>";
@@ -202,6 +221,7 @@
 		04A27D6B1DC48FE90086C19D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCA81DC4A0030048CBD9 /* Profile.storyboard */,
 				04A27D6C1DC48FE90086C19D /* contoller */,
 				04A27D6D1DC48FE90086C19D /* model */,
 				04A27D6E1DC48FE90086C19D /* view */,
@@ -233,6 +253,7 @@
 		04A27D6F1DC48FE90086C19D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0498FCB21DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -263,6 +284,7 @@
 		04283BA71DC1EB4A0064828E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YZ;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = julia;
@@ -296,9 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498FC9C1DC49F230048CBD9 /* Home.storyboard in Resources */,
 				04283BBD1DC1EB4A0064828E /* LaunchScreen.storyboard in Resources */,
+				0498FCAA1DC4A0030048CBD9 /* Profile.storyboard in Resources */,
 				04283BBA1DC1EB4A0064828E /* Assets.xcassets in Resources */,
 				04283BB81DC1EB4A0064828E /* Main.storyboard in Resources */,
+				0498FCA21DC49FE70048CBD9 /* Follow.storyboard in Resources */,
+				0498FCA61DC49FF60048CBD9 /* Live.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498FCAF1DC4D1BF0048CBD9 /* YZHomeVC.swift in Sources */,
+				0498FCB31DC4E3630048CBD9 /* UIBarButtonItem+Extention.swift in Sources */,
+				0498FCAD1DC4A1160048CBD9 /* YZMainTabbarVC.swift in Sources */,
 				04283BB31DC1EB4A0064828E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
